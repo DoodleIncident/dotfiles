@@ -23,14 +23,25 @@ set shiftwidth=2
 colorscheme ron
 
 set hlsearch
+set ignorecase
+set smartcase
+
+set splitright
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Eccentric keybinds
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let mapleader = "-"
+
 inoremap jk <esc>
 
 nnoremap L $
 nnoremap H 0
+
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
+
+nnoremap // :nohlsearch<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Filetype-specific stuff (coming soon)
