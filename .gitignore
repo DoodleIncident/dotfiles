@@ -2,4 +2,5 @@
 !.gitignore
 !.vimrc
 !.tmux.conf
+!.bashrc
 !.inputrc
