@@ -17,8 +17,8 @@ set undoreload=10000
 
 set tabstop=8 "to make hard tabs more obvious
 set expandtab
-set softtabstop=4
-set shiftwidth=4
+set softtabstop=2
+set shiftwidth=2
 
 colorscheme ron
 
