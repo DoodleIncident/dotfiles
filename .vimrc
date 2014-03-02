@@ -20,8 +20,8 @@ set undoreload=10000
 
 set tabstop=8 "to make hard tabs more obvious
 set expandtab
-set softtabstop=2
-set shiftwidth=2
+set softtabstop=4
+set shiftwidth=4
 
 colorscheme ron
 
@@ -31,12 +31,17 @@ set smartcase
 
 set splitright
 
+set wildmenu
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Eccentric keybinds
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let mapleader = "-"
 
 inoremap jk <esc>
+
+nnoremap j gj
+nnoremap k gk
 
 nnoremap L $
 nnoremap H 0
