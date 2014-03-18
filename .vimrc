@@ -52,8 +52,19 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 nnoremap // :nohlsearch<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Filetype-specific stuff (coming soon)
+" Filetype-specific stuff
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+augroup filetype_php
+    autocmd!
+    autocmd BufNewFile,BufRead *.php set noexpandtab
+    autocmd BufNewFile,BufRead *.php set tabstop=4
+    autocmd BufNewFile,BufRead *.php set softtabstop=0
+augroup END
+
+augroup filetype_atlas " LC2K Assembly
+    autocmd!
+    autocmd BufNewFile,BufRead *.as set softtabstop=8
+augroup END
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin settings
