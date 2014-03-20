@@ -1,3 +1,4 @@
+TERM=xterm-256color
 set -o vi
 
 # Store ALL the things!

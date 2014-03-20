@@ -4,6 +4,12 @@
 execute pathogen#infect()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plugin settings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set laststatus=2
+let g:solarized_termcolors=256
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Sensible settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax on
@@ -23,7 +29,8 @@ set expandtab
 set softtabstop=4
 set shiftwidth=4
 
-colorscheme ron
+set background=dark
+colorscheme solarized
 
 set hlsearch
 set ignorecase
@@ -66,7 +73,11 @@ augroup filetype_atlas " LC2K Assembly
     autocmd BufNewFile,BufRead *.as set softtabstop=8
 augroup END
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Plugin settings
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set laststatus=2
+augroup filetype_clojure
+    autocmd!
+    autocmd BufNewFile,BufRead *.clj set background=light
+    autocmd BufNewFile,BufRead *.clj RainbowParenthesesActivate
+    autocmd BufNewFile,BufRead *.clj RainbowParenthesesLoadRound
+    autocmd BufNewFile,BufRead *.clj RainbowParenthesesLoadSquare
+    autocmd BufNewFile,BufRead *.clj RainbowParenthesesLoadBraces
+augroup END
